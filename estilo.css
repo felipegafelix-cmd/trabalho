@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+    color: #202124;
+}
+
+a {
+    text-decoration: none;
+    color: #202124;
+}
+
+.header-container {
+    width: 100%;
+    padding: 6px 4px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
+}
+
+.menu a {
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.google-apps-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    padding: 0;
+    transition: background-color 0.2s; 
+}
+
+.google-apps-button:hover {
+    background-color: #f0f0f0;
+}
+
+.google-apps-button .material-icons {
+    font-size: 24px;
+    color: #5f6368;
+    line-height: 1;
+}
+
+.user-profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 150px;
+    box-sizing: border-box;
+}
+
+.logo-google img {
+    width: 272px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    width: 90%;
+    max-width: 584px;
+    height: 44px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+    transition: box-shadow 0.3s;
+}
+
+.search-container:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,0.45); 
+}
+
+#campo-pesquisa {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    resize: none;
+    height: 24px;
+    line-height: 24px;
+    background: transparent;
+    overflow: hidden;
+}
+
+#campo-pesquisa:focus {
+    outline: none;
+}
+
+.search-button, .mic-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #9aa0a6;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.search-button i, .mic-button i {
+    font-size: 18px;
+}
+
+.search-button {
+    color: #757575;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons-container input[type="submit"] {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.buttons-container input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.buttons-container input[type="submit"]:focus {
+    outline: none;
+    border: 1px solid #4285f4;
+}
+
+.main-footer {
+    width: 100%;
+    background-color: #f2f2f2; 
+    border-top: 1px solid #e4e4e4; 
+    color: #70757a;
+    font-size: 15px;
+    margin-top: auto; 
+    box-sizing: border-box;
+}
+
+.main-footer > div:first-child {
+    padding: 15px 30px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.footer-inferior {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.ft {
+    padding: 15px 15px; 
+    color: #70757a;
+    font-size: 14px;
+    display: block;
+    margin: 0;
+}
+
+.footer-inferior {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 30px;
+    align-items: center;
+}
